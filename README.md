@@ -6,7 +6,7 @@
 
 1. In phone, Settings->Security->Unknown Sources [Turn on]. This allows installation of dowloaded apks.
 2. Copy the below apk to sdcard in the phone or directly click the below url in phone and install the app.
-3. Download APK from the link https://github.com/AnkitKumar23/VideoSearch/blob/master/VideoSearch/app/VideoSearch.apk
+3. ![Download APK Here] (https://github.com/AnkitKumar23/VideoSearch/blob/master/VideoSearch/app/VideoSearch.apk)
 
 ### Description
 
