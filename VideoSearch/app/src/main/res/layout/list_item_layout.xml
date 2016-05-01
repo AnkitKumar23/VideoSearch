@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:descendantFocusability="blocksDescendants">
+    <RelativeLayout
+        android:id="@+id/frame"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:paddingEnd="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+             />
+        <TextView
+            android:id="@+id/durationView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:text=""
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 likes"
+        android:id="@+id/likesView"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_above="@+id/viewsView"
+        android:layout_toRightOf="@+id/frame"
+        android:layout_toEndOf="@+id/frame" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 views"
+        android:id="@+id/viewsView"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_above="@+id/postedView"
+        android:layout_toRightOf="@+id/frame"
+        android:layout_toEndOf="@+id/frame" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Posted unknown"
+        android:id="@+id/postedView"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_above="@+id/ratingView"
+        android:layout_toRightOf="@+id/frame"
+        android:layout_toEndOf="@+id/frame" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No rating"
+        android:id="@+id/ratingView"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:paddingBottom="16dp"
+        android:layout_toRightOf="@+id/frame"
+        android:layout_toEndOf="@+id/frame"
+        android:layout_alignBottom="@+id/frame"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title: "
+        android:drawableRight="@mipmap/ic_arrow_drop_down_black_24dp"
+        android:id="@+id/titleView"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/frame"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description: "
+        android:id="@+id/descView"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:visibility="gone"
+        android:layout_below="@+id/titleView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/logoView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/descView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="from  "
+        android:id="@+id/userNameView"
+        android:paddingStart="16dp"
+        android:paddingLeft="16dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@+id/descView"
+        android:layout_toEndOf="@+id/logoView"
+        android:layout_toRightOf="@+id/logoView"/>
+</RelativeLayout>
